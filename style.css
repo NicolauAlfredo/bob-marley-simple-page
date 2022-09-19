@@ -1,0 +1,311 @@
+/* Formatação geral */
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho e menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em;
+    margin-bottom: 2em;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 0.5em;
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.link_items {
+    display: flex;
+    list-style: none;
+}
+
+.link_items li {
+    margin-right: 1.3em;
+}
+
+.link_items a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.4s;
+    border-bottom: 2px solid transparent;
+}
+
+.link_items a:hover {
+    border-color: #fff;
+}
+
+/* */
+.descricao h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.descricao a {
+    text-decoration: none;
+    color: #333;
+}
+
+.descricao a:hover {
+    color: #9d9df3;
+}
+
+/* Corpo */
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards h1 {
+    text-align: center;
+}
+
+.cards li {
+    list-style: none;
+    margin: 5px;
+}
+
+/* Card 1 */
+.card-1 {
+    background: #333;
+    padding: 10px;
+    margin: 20px 10px;
+    color: #fff;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-1 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-1 header h1 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.card-1 li {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+}
+
+.card-1 li:hover {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-1 a:hover {
+    color: #9d9df3;
+}
+
+/* Card 2 */
+.card-2 {
+    background: #333;
+    padding: 10px;
+    margin: 20px 10px;
+    color: #fff;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-2 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-2 header h1 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.card-2 li {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+}
+
+.card-2 li:hover {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-2 a:hover {
+    color: #9d9df3;
+}
+
+/* Card 3 */
+.card-3 {
+    background: #333;
+    padding: 10px;
+    margin: 20px 10px;
+    color: #fff;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-3 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-3 header h1 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.card-3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-3 a:hover {
+    color: #9d9df3;
+}
+
+.card-3 li {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+}
+
+.card-3 li:hover {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+/* Musica favorita */
+.musica-favorita {
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.musica-favorita h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.musica-favorita audio {
+    margin: 10px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.musica-favorita .descricao p {
+    margin: 25px;
+}
+
+.musica-favorita .descricao span {
+    background-color: #c9c9c9;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.musica-favorita .title {
+    text-transform: uppercase;
+    background: #9d9df3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+
+#footer {
+    height: 200px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    background: #fff;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+
+#footer a:hover {
+    color: blue;
+}
